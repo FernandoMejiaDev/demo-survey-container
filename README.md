@@ -33,7 +33,7 @@ Esta demo fue construida utilizando el siguiente stack:
 Este repositorio tiene como objetivo ayudarte a entender cómo implementar y usar el paquete `survey-container` en tu propio entorno. Toda la configuración necesaria está explicada paso a paso para que puedas adaptar esta solución a tus necesidades.
 
 <details>
-<summary>🛠️ Cómo instalar el paquete</summary>
+<summary>Cómo instalar el paquete</summary>
 
 Para instalar el paquete `survey-container`, simplemente abre tu terminal y ejecuta el siguiente comando:
 
@@ -232,7 +232,7 @@ En tu propio proyecto puedes (y se recomienda) utilizar **variables de entorno**
 </details>
 
 <details>
-<summary>⚙️ Configuraciones necesarias en el Backend</summary>   
+<summary>Configuraciones necesarias en el Backend</summary>   
 
 ### ¿Cómo funciona este paquete?
 El paquete `survey-container` no es un paquete que funciona de forma independiente; requiere que tu proyecto tenga un backend funcional. Aunque el componente del frontend puede instalarse con NPM y usarse directamente en una app React, es obligatorio tener previamente configurado el backend para que funcione correctamente.
