@@ -7,7 +7,7 @@ Si estás buscando el repositorio del desarrollo del paquete, puedes encontrarlo
 [![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/survey-container)
 [![GITHUB](https://img.shields.io/static/v1?message=Documentación&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/Survey-Container-Documentation)
 
-# 🚀 Demo - Survey Container
+# Demo - Survey Container
 Este repositorio es una **aplicación de demostración** que utiliza el paquete NPM `survey-container` como dependencia. Aquí encontrarás ejemplos claros y documentación sobre:
 
 - Cómo instalar el paquete
@@ -15,7 +15,7 @@ Este repositorio es una **aplicación de demostración** que utiliza el paquete 
 - Configuraciones necesarias en el Backend
 - Base de datos
 
-🧪 ¿Qué incluye esta demo?
+¿Qué incluye esta demo?
 Esta demo fue construida utilizando el siguiente stack:
 
 <div align="left">
@@ -71,11 +71,11 @@ Una vez instalado correctamente, puedes integrarlo en el frontend de tu proyecto
 </details>
 
 <details>
-<summary> 🚀 Cómo integrarlo en tu proyecto front-End</summary>
+<summary>Cómo integrarlo en tu proyecto front-End</summary>
 
 Esta demo incluye dos páginas clave que muestran cómo integrar el paquete `survey-container`:
 
-### 📊 Página de Métricas
+### Página de Métricas
 
 Esta pantalla permite visualizar todas las encuestas disponibles en tu base de datos. En esta demo se utiliza **MySQL** como sistema de base de datos.
 
@@ -91,7 +91,7 @@ cambiala por la URL de tú proyecto con esto te permitirá consultar y visualiza
 
 ![Demo-Image-1](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/readme/Readme-Image-1.png)
 
-### 📝 Página para Contestar Encuestas
+### Página para Contestar Encuestas
 
 Esta es la sección que probablemente más te interesa: cómo usar el componente `SurveyWidget` que exporta el paquete.
 
@@ -158,13 +158,13 @@ const { surveyId } = useParams();
 ```
 - Renderizar el componente `<SurveyWidget />` y pasarle los props necesarios como `surveyId`, `fetchUrl`, `responseUrl`.
 
-### 🧩 Props del componente SurveyWidget
+### Props del componente SurveyWidget
 
 El componente `<SurveyWidget />` acepta varios props para adaptar su comportamiento a distintos entornos y necesidades. A continuación te explicamos cada uno con base en cómo se utiliza en esta demo:
 
 ---
 
-### ✅ Props utilizados en esta demo
+### Props utilizados en esta demo
 
 ```
 <SurveyWidget
@@ -177,7 +177,7 @@ El componente `<SurveyWidget />` acepta varios props para adaptar su comportamie
 />
 ```
 
-### 🧾 Explicación de cada prop
+### Explicación de cada prop
 
 | Prop               | Tipo                               | Obligatorio | Descripción                                                                                                                                                                                                                                                                           |
 | ------------------ | ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,7 +191,7 @@ El componente `<SurveyWidget />` acepta varios props para adaptar su comportamie
 | `submitButtonText` | `string`                           | ❌ No        | Texto del botón de envío. Por defecto: `"Enviar respuestas"`.                                                                                                                                                                                                                         |
 | `className`        | `string`                           | ❌ No        | Clase CSS personalizada para aplicar estilos adicionales al contenedor del widget.                                                                                                                                                                                                    |
 
-### 🔔 ¿Por qué usar onAlert?
+### ¿Por qué usar onAlert?
 
 `onAlert` es muy útil si quieres notificar al usuario cuando:
 
@@ -280,7 +280,7 @@ api/
 
 ```
 
-### 📌 Uso de metrics.php
+### Uso de metrics.php
 
 El archivo `metrics/metrics.php` es fundamental, ya que se encarga de traer todas las encuestas desde la base de datos para ser mostradas en el Frontend.
 
@@ -291,15 +291,15 @@ Si estás usando PHP, puedes copiar el código directamente, ya que está prepar
 Si estás usando otro stack (por ejemplo, Express.js, Django, Laravel, etc.), puedes adaptar el comportamiento de estos archivos según tu tecnología.
 
 
-### 💡 Nota importante
+### Nota importante
 Aunque puedes copiar directamente los archivos PHP para facilitar la integración, es necesario contar con ciertas tablas específicas en tu base de datos para que todo funcione correctamente. Estas se detallan más adelante en el README.
 
 </details>
 
 <details>
-<summary>📊 Base de datos</summary>
+<summary>Base de datos</summary>
 
-### 🗃️ Base de datos
+### Base de datos
 
 En este proyecto se utiliza **MySQL**, y dentro de la carpeta `database/` se incluye un archivo llamado `schema.sql` que contiene todas las instrucciones necesarias para crear las tablas requeridas.
 
@@ -333,7 +333,7 @@ Estas tablas representan:
 - `Question`: Contiene las preguntas asociadas a cada encuesta.
 - `Response`: Guarda las respuestas enviadas por los usuarios.
 
-📂 Ruta del archivo SQL:
+Ruta del archivo SQL:
 
 `database/schema.sql`
 
@@ -344,4 +344,7 @@ Estas tablas representan:
 [![NPM](https://img.shields.io/static/v1?message=Paquete-NPM&logo=NPM&label=&color=CD3E3D&logoColor=white&labelColor=&style=for-the-badge)](https://www.npmjs.com/package/survey-container)
 [![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/survey-container)
 [![WORDPRESS](https://img.shields.io/static/v1?message=página-de-documentación&logo=WordPress&label=&color=1790c8&logoColor=white&labelColor=&style=for-the-badge)](https://surveycontainer.wordpress.com/)
+
+---
 </div>
+
