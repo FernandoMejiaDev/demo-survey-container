@@ -35,6 +35,8 @@ Este repositorio tiene como objetivo ayudarte a entender cómo implementar y usa
 <details>
 <summary>Cómo instalar el paquete</summary>
 
+# Cómo instalar el paquete
+
 Para instalar el paquete `survey-container`, simplemente abre tu terminal y ejecuta el siguiente comando:
 
 ```
@@ -67,15 +69,17 @@ Una vez instalado, podrás verificar que se encuentra en tu archivo `package.jso
 Esta demo se utilizó como entorno de prueba para detectar y corregir bugs en versiones anteriores del paquete.
 Por ello, se recomienda **no instalar versiones antiguas**, ya que podrían contener errores que ya fueron corregidos en versiones recientes.
 
-Una vez instalado correctamente, puedes integrarlo en el frontend de tu proyecto sin importar la tecnología que estés utilizando. En esta demo se utilizó React, pero puedes adaptarlo a otros entornos si lo deseas.
+Una vez instalado correctamente, puedes integrarlo en el frontend de tu proyecto de React.
 </details>
 
 <details>
 <summary>Cómo integrarlo en tu proyecto front-End</summary>
 
+# Cómo integrarlo en tu proyecto front-End
+
 Esta demo incluye dos páginas clave que muestran cómo integrar el paquete `survey-container`:
 
-### Página de Métricas
+## Página de Métricas
 
 Esta pantalla permite visualizar todas las encuestas disponibles en tu base de datos. En esta demo se utiliza **MySQL** como sistema de base de datos.
 
@@ -83,15 +87,15 @@ Puedes encontrar el código fuente de esta página en:
 
 `frontend/src/components/ui/MetricsUi.jsx`
 
-La función principal aquí es obtener las métricas desde tu backend. Asegúrate de configurar correctamente la URL del `fetch`, como se muestra en el ejemplo:
+La función principal aquí es obtener las métricas desde tu backend. Asegúrate de configurar correctamente la **URL** del `fetch`, como se muestra en el ejemplo:
 
 `fetch("http://localhost:3000/api/metrics/metrics.php")`
 
-cambiala por la URL de tú proyecto con esto te permitirá consultar y visualizar las métricas de tus encuestas o de lo contrario te mostrara el error en la consola.
+cambiala por la **URL** de tú proyecto con esto te permitirá consultar y visualizar las métricas de tus encuestas o de lo contrario te mostrara el error en la consola.
 
 ![Demo-Image-1](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/readme/Readme-Image-1.png)
 
-### Página para Contestar Encuestas
+## Página para Contestar Encuestas
 
 Esta es la sección que probablemente más te interesa: cómo usar el componente `SurveyWidget` que exporta el paquete.
 
@@ -99,7 +103,7 @@ El código de esta página se encuentra en:
 
 `frontend/src/components/ui/SurveyUi.jsx`
 
-Aquí es donde se importa e integra el paquete survey-container en una aplicación real utilizando React.
+Aquí es donde se importa e integra el paquete **survey-container** en una aplicación real utilizando **React.**
 
 El código se muestra a continuación:
 
@@ -158,13 +162,11 @@ const { surveyId } = useParams();
 ```
 - Renderizar el componente `<SurveyWidget />` y pasarle los props necesarios como `surveyId`, `fetchUrl`, `responseUrl`.
 
-### Props del componente SurveyWidget
+## Props del componente SurveyWidget
 
 El componente `<SurveyWidget />` acepta varios props para adaptar su comportamiento a distintos entornos y necesidades. A continuación te explicamos cada uno con base en cómo se utiliza en esta demo:
 
----
-
-### Props utilizados en esta demo
+## Props utilizados en esta demo
 
 ```
 <SurveyWidget
@@ -177,7 +179,7 @@ El componente `<SurveyWidget />` acepta varios props para adaptar su comportamie
 />
 ```
 
-### Explicación de cada prop
+## Explicación de cada prop
 
 | Prop               | Tipo                               | Obligatorio | Descripción                                                                                                                                                                                                                                                                           |
 | ------------------ | ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,7 +193,7 @@ El componente `<SurveyWidget />` acepta varios props para adaptar su comportamie
 | `submitButtonText` | `string`                           | ❌ No        | Texto del botón de envío. Por defecto: `"Enviar respuestas"`.                                                                                                                                                                                                                         |
 | `className`        | `string`                           | ❌ No        | Clase CSS personalizada para aplicar estilos adicionales al contenedor del widget.                                                                                                                                                                                                    |
 
-### ¿Por qué usar onAlert?
+## ¿Por qué usar onAlert?
 
 `onAlert` es muy útil si quieres notificar al usuario cuando:
 
@@ -220,13 +222,14 @@ En la demo se usó así, con `react-toastify`:
         hideProgressBar={false}
       />
 ```
-Pero puedes usar cualquier otra solución como `modals`, `alerts`, `banners`, etc.
+Pero puedes usar cualquier otra solución como **modals, alerts, banners, etc.**
 
-✅ Si todo está correctamente configurado, deberías ver en pantalla el contenido completo de la encuesta.  
+Si todo está correctamente configurado, deberías ver en pantalla el contenido completo de la encuesta.  
 En la demo, por ejemplo, se muestra una encuesta con preguntas sobre **Git** como referencia visual.
 
-🔗 En los ejemplos proporcionados dentro del código y el `README`, verás URLs con `localhost`. Estas se usan únicamente para mostrar de forma clara cómo debe estructurarse cada endpoint.  
-En tu propio proyecto puedes (y se recomienda) utilizar **variables de entorno** para manejar estas rutas y no exponerlas directamente en el código.
+En los ejemplos proporcionados dentro del código y el **README**, verás URLs con **localhost**. Estas se usan únicamente para mostrar de forma clara cómo debe estructurarse cada endpoint.  
+
+En tu propio proyecto puedes **(y se recomienda)** utilizar **variables de entorno** para manejar estas rutas y no exponerlas directamente en el código.
 
 ![Demo-Image-2](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/readme/Readme-Image-2.png)
 </details>
@@ -234,20 +237,22 @@ En tu propio proyecto puedes (y se recomienda) utilizar **variables de entorno**
 <details>
 <summary>Configuraciones necesarias en el Backend</summary>   
 
-### ¿Cómo funciona este paquete?
+# Configuraciones necesarias en el Backend
+
+## ¿Cómo funciona este paquete?
 El paquete `survey-container` no es un paquete que funciona de forma independiente; requiere que tu proyecto tenga un backend funcional. Aunque el componente del frontend puede instalarse con NPM y usarse directamente en una app React, es obligatorio tener previamente configurado el backend para que funcione correctamente.
 
-> ⚠️ Por eso se recomienda primero preparar el backend antes de instalar la dependencia survey-container. Esto evitará errores, confusiones o que la encuesta no se muestre.
+> Por eso **se recomienda primero preparar el backend antes de instalar la dependencia survey-container. Esto evitará errores, confusiones o que la encuesta no se muestre**.
 
-### Tecnologías utilizadas en esta demo
+## Tecnologías utilizadas en esta demo
 
-Para esta demo se ha utilizado un backend en PHP puro junto con MySQL. Puedes usar cualquier tecnología backend que desees (Node.js, Laravel, Python, etc.), pero este README explicará la configuración tal y como se muestra en la demo con PHP puro.
+Para esta demo se ha utilizado un backend en **PHP** puro junto con **MySQL.** Puedes usar cualquier tecnología backend que desees, pero este README explicará la configuración tal y como se muestra en la demo con **PHP puro.**
 
 > 👉 no se utilizó Laravel ya que se trata de una demo simple que busca enseñar el uso del paquete.
 
 ### 1️⃣ Configura tu base de datos
 
-Debes crear una base de datos MySQL, SQLite, postgresQL y conectar tu backend a ella. En el ejemplo de esta demo se usa MySQL, puedes ver cómo se hace en el archivo:
+Debes crear una base de datos **MySQL, SQLite, postgresQL** y conectar tu backend a ella. En el ejemplo de esta demo se usa **MySQL**, puedes ver cómo se hace en el archivo:
 
 📄 `backend/config.php`
 
@@ -261,7 +266,7 @@ En la carpeta `backend/` encontrarás:
 - `composer.json` y `composer.lock`: archivos de configuración de Composer (por si deseas instalar librerías).
 - Carpeta `api/`: contiene todas las rutas que el Frontend usará para comunicarse con el backend.
 
-### Estructura de la carpeta api / configuración
+## Estructura de la carpeta api / configuración
 
 Dentro de la carpeta `api/` se encuentran los archivos PHP necesarios para gestionar las encuestas, preguntas, respuestas y métricas. A continuación se muestra un resumen de su estructura:
 
@@ -280,7 +285,7 @@ api/
 
 ```
 
-### Uso de metrics.php
+## Uso de metrics.php
 
 El archivo `metrics/metrics.php` es fundamental, ya que se encarga de traer todas las encuestas desde la base de datos para ser mostradas en el Frontend.
 
@@ -290,20 +295,19 @@ Si estás usando PHP, puedes copiar el código directamente, ya que está prepar
 
 Si estás usando otro stack (por ejemplo, Express.js, Django, Laravel, etc.), puedes adaptar el comportamiento de estos archivos según tu tecnología.
 
-
-### Nota importante
-Aunque puedes copiar directamente los archivos PHP para facilitar la integración, es necesario contar con ciertas tablas específicas en tu base de datos para que todo funcione correctamente. Estas se detallan más adelante en el README.
+# Nota importante
+Aunque puedes copiar directamente los archivos **PHP** para facilitar la integración, es necesario contar con ciertas tablas específicas en tu base de datos para que todo funcione correctamente. Estas se detallan más adelante en el **README.**
 
 </details>
 
 <details>
 <summary>Base de datos</summary>
 
-### Base de datos
+## Base de datos
 
 En este proyecto se utiliza **MySQL**, y dentro de la carpeta `database/` se incluye un archivo llamado `schema.sql` que contiene todas las instrucciones necesarias para crear las tablas requeridas.
 
-Si planeas clonar o adaptar este proyecto, puedes usar directamente el archivo `schema.sql` o copiar el siguiente código SQL para crear las tablas:
+Si planeas clonar o adaptar este proyecto, puedes usar directamente el archivo `schema.sql` o copiar el siguiente código **SQL** para crear las tablas:
 
 ```
 CREATE TABLE IF NOT EXISTS Survey (
@@ -333,7 +337,7 @@ Estas tablas representan:
 - `Question`: Contiene las preguntas asociadas a cada encuesta.
 - `Response`: Guarda las respuestas enviadas por los usuarios.
 
-Ruta del archivo SQL:
+Ruta del archivo **SQL**:
 
 `database/schema.sql`
 
