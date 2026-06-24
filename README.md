@@ -77,7 +77,7 @@ Una vez instalado correctamente, puedes integrarlo en el frontend de tu proyecto
 
 # Cómo integrarlo en tu proyecto front-End
 
-Esta demo incluye dos páginas clave que muestran cómo integrar el paquete `survey-container`:
+Esta demo incluye dos páginas clave que muestran cómo integrar el paquete **survey-container:**
 
 ## Página de Métricas
 
@@ -240,7 +240,7 @@ En tu propio proyecto puedes **(y se recomienda)** utilizar **variables de entor
 # Configuraciones necesarias en el Backend
 
 ## ¿Cómo funciona este paquete?
-El paquete `survey-container` no es un paquete que funciona de forma independiente; requiere que tu proyecto tenga un backend funcional. Aunque el componente del frontend puede instalarse con NPM y usarse directamente en una app React, es obligatorio tener previamente configurado el backend para que funcione correctamente.
+El paquete **survey-container** no es un paquete que funciona de forma independiente; requiere que tu proyecto tenga un backend funcional. Aunque el componente del frontend puede instalarse con NPM y usarse directamente en una app React, es obligatorio tener previamente configurado el backend para que funcione correctamente.
 
 > Por eso **se recomienda primero preparar el backend antes de instalar la dependencia survey-container. Esto evitará errores, confusiones o que la encuesta no se muestre**.
 
@@ -268,7 +268,7 @@ En la carpeta `backend/` encontrarás:
 
 ## Estructura de la carpeta api / configuración
 
-Dentro de la carpeta `api/` se encuentran los archivos PHP necesarios para gestionar las encuestas, preguntas, respuestas y métricas. A continuación se muestra un resumen de su estructura:
+Dentro de la carpeta `api/` se encuentran los archivos **PHP** necesarios para gestionar las encuestas, preguntas, respuestas y métricas. A continuación se muestra un resumen de su estructura:
 
 ```
 api/
@@ -289,21 +289,21 @@ api/
 
 El archivo `metrics/metrics.php` es fundamental, ya que se encarga de traer todas las encuestas desde la base de datos para ser mostradas en el Frontend.
 
-Si estás usando PHP, puedes copiar el código directamente, ya que está preparado para funcionar con la estructura esperada por este paquete.
+Si estás usando **PHP**, puedes copiar el código directamente, ya que está preparado para funcionar con la estructura esperada por este paquete.
 
 > 🧠 Más adelante en este README se explicarán las tablas necesarias en la base de datos para que todo funcione correctamente.
 
 Si estás usando otro stack (por ejemplo, Express.js, Django, Laravel, etc.), puedes adaptar el comportamiento de estos archivos según tu tecnología.
 
 # Nota importante
-Aunque puedes copiar directamente los archivos **PHP** para facilitar la integración, es necesario contar con ciertas tablas específicas en tu base de datos para que todo funcione correctamente. Estas se detallan más adelante en el **README.**
+Aunque puedes copiar directamente los archivos **PHP** para facilitar la integración, **es necesario contar con ciertas tablas específicas en tu base de datos para que todo funcione correctamente.** Estas se detallan más adelante en el **README.**
 
 </details>
 
 <details>
 <summary>Base de datos</summary>
 
-## Base de datos
+# Base de datos
 
 En este proyecto se utiliza **MySQL**, y dentro de la carpeta `database/` se incluye un archivo llamado `schema.sql` que contiene todas las instrucciones necesarias para crear las tablas requeridas.
 
