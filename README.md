@@ -183,15 +183,15 @@ El componente `<SurveyWidget />` acepta varios props para adaptar su comportamie
 
 | Prop               | Tipo                               | Obligatorio | Descripción                                                                                                                                                                                                                                                                           |
 | ------------------ | ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `surveyId`         | `string`                           | ✅ Sí        | Es el ID de la encuesta que quieres mostrar. En esta demo se obtiene desde la URL usando `useParams()`.                                                                                                                                                                               |
-| `fetchUrl`         | `string`                           | ✅ Sí      | Es la URL base para hacer la solicitud **GET** y obtener los datos de la encuesta. Por ejemplo: `http://localhost:3000/api/surveys/survey.php?id=`. Se añadirá automáticamente el `surveyId` al final.                               |
-| `responseUrl`      | `string`                           | ✅ Sí      | Es la URL donde se envían las respuestas con una solicitud **POST**.                                                                                                                                          |
-| `onAlert`          | `(message: string, type?: string)` | ❌ No        | Función que se ejecuta para mostrar una alerta dependiendo del estado de la encuesta (error, éxito, advertencia). Puedes personalizarla como quieras (modal, toast, etc.). En esta demo se usa la librería [`react-toastify`](https://fkhadra.github.io/react-toastify/introduction). |
-| `apiUrl`           | `string`                           | ❌ No        | Si prefieres una URL base en lugar de `fetchUrl` o `responseUrl` individuales, puedes usar este prop como raíz para los endpoints `/surveys` y `/responses`. No se usa en esta demo.                                                                                                  |
-| `onSubmit`         | `(responses) => Promise<void>`     | ❌ No        | Si quieres manejar tú mismo el envío de respuestas, puedes pasar tu propia función `onSubmit`. Si no se define, se hará un POST automáticamente a `responseUrl`.                                                                                                                      |
-| `loadingText`      | `string`                           | ❌ No        | Texto que se muestra mientras la encuesta está cargando. Por defecto: `"Cargando encuesta..."`.                                                                                                                                                                                       |
-| `submitButtonText` | `string`                           | ❌ No        | Texto del botón de envío. Por defecto: `"Enviar respuestas"`.                                                                                                                                                                                                                         |
-| `className`        | `string`                           | ❌ No        | Clase CSS personalizada para aplicar estilos adicionales al contenedor del widget.                                                                                                                                                                                                    |
+| `surveyId`         | `string`                           | Sí        | Es el ID de la encuesta que quieres mostrar. En esta demo se obtiene desde la URL usando `useParams()`.                                                                                                                                                                               |
+| `fetchUrl`         | `string`                           | Sí      | Es la URL base para hacer la solicitud **GET** y obtener los datos de la encuesta. Por ejemplo: `http://localhost:3000/api/surveys/survey.php?id=`. Se añadirá automáticamente el `surveyId` al final.                               |
+| `responseUrl`      | `string`                           | Sí      | Es la URL donde se envían las respuestas con una solicitud **POST**.                                                                                                                                          |
+| `onAlert`          | `(message: string, type?: string)` | No        | Función que se ejecuta para mostrar una alerta dependiendo del estado de la encuesta (error, éxito, advertencia). Puedes personalizarla como quieras (modal, toast, etc.). En esta demo se usa la librería [`react-toastify`](https://fkhadra.github.io/react-toastify/introduction). |
+| `apiUrl`           | `string`                           | No        | Si prefieres una URL base en lugar de `fetchUrl` o `responseUrl` individuales, puedes usar este prop como raíz para los endpoints `/surveys` y `/responses`. No se usa en esta demo.                                                                                                  |
+| `onSubmit`         | `(responses) => Promise<void>`     | No        | Si quieres manejar tú mismo el envío de respuestas, puedes pasar tu propia función `onSubmit`. Si no se define, se hará un POST automáticamente a `responseUrl`.                                                                                                                      |
+| `loadingText`      | `string`                           | No        | Texto que se muestra mientras la encuesta está cargando. Por defecto: `"Cargando encuesta..."`.                                                                                                                                                                                       |
+| `submitButtonText` | `string`                           | No        | Texto del botón de envío. Por defecto: `"Enviar respuestas"`.                                                                                                                                                                                                                         |
+| `className`        | `string`                           | No        | Clase CSS personalizada para aplicar estilos adicionales al contenedor del widget.                                                                                                                                                                                                    |
 
 ## ¿Por qué usar onAlert?
 
@@ -248,17 +248,17 @@ El paquete **survey-container** no es un paquete que funciona de forma independi
 
 Para esta demo se ha utilizado un backend en **PHP** puro junto con **MySQL.** Puedes usar cualquier tecnología backend que desees, pero este README explicará la configuración tal y como se muestra en la demo con **PHP puro.**
 
-> 👉 no se utilizó Laravel ya que se trata de una demo simple que busca enseñar el uso del paquete.
+> no se utilizó Laravel ya que se trata de una demo simple que busca enseñar el uso del paquete.
 
-### 1️⃣ Configura tu base de datos
+## Configura tu base de datos
 
 Debes crear una base de datos **MySQL, SQLite, postgresQL** y conectar tu backend a ella. En el ejemplo de esta demo se usa **MySQL**, puedes ver cómo se hace en el archivo:
 
-📄 `backend/config.php`
+`backend/config.php`
 
 **Utiliza las variables de entorno por motivos de seguridad.**
 
-### 2️⃣ Archivos importantes del backend
+## Archivos importantes del backend
 
 En la carpeta `backend/` encontrarás:
 
@@ -291,7 +291,7 @@ El archivo `metrics/metrics.php` es fundamental, ya que se encarga de traer toda
 
 Si estás usando **PHP**, puedes copiar el código directamente, ya que está preparado para funcionar con la estructura esperada por este paquete.
 
-> 🧠 Más adelante en este README se explicarán las tablas necesarias en la base de datos para que todo funcione correctamente.
+> Más adelante en este README se explicarán las tablas necesarias en la base de datos para que todo funcione correctamente.
 
 Si estás usando otro stack (por ejemplo, Express.js, Django, Laravel, etc.), puedes adaptar el comportamiento de estos archivos según tu tecnología.
 
@@ -352,4 +352,3 @@ Ruta del archivo **SQL**:
 </div>
 
 ---
-
