@@ -8,7 +8,7 @@ Si estás buscando el repositorio del desarrollo del paquete, puedes encontrarlo
 [![GITHUB](https://img.shields.io/static/v1?message=Documentación&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/Survey-Container-Documentation)
 
 # Demo - Survey Container
-Este repositorio es una **aplicación de demostración** que utiliza el paquete NPM `survey-container` como dependencia. Aquí encontrarás ejemplos claros y documentación sobre:
+Este repositorio es una **aplicación de demostración** que utiliza el paquete **NPM survey-container** como dependencia. Aquí encontrarás ejemplos claros y documentación sobre:
 
 - Cómo instalar el paquete
 - Cómo integrarlo en tu proyecto front-End
@@ -30,14 +30,14 @@ Esta demo fue construida utilizando el siguiente stack:
 
 </div>
 
-Este repositorio tiene como objetivo ayudarte a entender cómo implementar y usar el paquete `survey-container` en tu propio entorno. Toda la configuración necesaria está explicada paso a paso para que puedas adaptar esta solución a tus necesidades.
+Este repositorio tiene como objetivo ayudarte a entender cómo implementar y usar el paquete **survey-container** en tu propio entorno. Toda la configuración necesaria está explicada paso a paso para que puedas adaptar esta solución a tus necesidades.
 
 <details>
 <summary>Cómo instalar el paquete</summary>
 
 # Cómo instalar el paquete
 
-Para instalar el paquete `survey-container`, simplemente abre tu terminal y ejecuta el siguiente comando:
+Para instalar el paquete **survey-container**, simplemente abre tu terminal y ejecuta el siguiente comando:
 
 ```
 npm i survey-container
@@ -69,7 +69,7 @@ Una vez instalado, podrás verificar que se encuentra en tu archivo `package.jso
 Esta demo se utilizó como entorno de prueba para detectar y corregir bugs en versiones anteriores del paquete.
 Por ello, se recomienda **no instalar versiones antiguas**, ya que podrían contener errores que ya fueron corregidos en versiones recientes.
 
-Una vez instalado correctamente, puedes integrarlo en el frontend de tu proyecto de React.
+Una vez instalado correctamente, puedes integrarlo en el frontend de tu proyecto de **React.**
 </details>
 
 <details>
