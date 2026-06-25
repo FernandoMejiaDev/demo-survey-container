@@ -88,6 +88,8 @@ Esta pantalla permite visualizar todas las encuestas disponibles en tu base de d
 Puedes encontrar el código fuente de esta página en:
 
 `frontend/src/components/ui/MetricsUi.jsx`
+*[MetricsUi](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/frontend/src/components/ui/MetricsUi.jsx)*
+
 
 La función principal aquí es obtener las métricas desde tu backend. Asegúrate de configurar correctamente la **URL** del `fetch`, como se muestra en el ejemplo:
 
