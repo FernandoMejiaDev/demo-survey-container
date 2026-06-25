@@ -43,7 +43,9 @@ Para instalar el paquete **survey-container**, simplemente abre tu terminal y ej
 npm i survey-container
 ```
 
-> Este paquete está publicado en [NPM](https://www.npmjs.com/package/survey-container), donde también encontrarás esta misma documentación.
+Este paquete está publicado en **NPM**, donde también encontrarás esta misma documentación.
+
+> *[NPM-survey-container](https://www.npmjs.com/package/survey-container)*
 
 En esta demo, el paquete se instala desde la carpeta del frontend.
 
