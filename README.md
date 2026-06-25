@@ -213,8 +213,6 @@ Para esta demo se ha utilizado un backend en **PHP** puro junto con **MySQL.** P
 
 Debes crear una base de datos **MySQL, SQLite, postgresQL** y conectar tu backend a ella. En el ejemplo de esta demo se usa **MySQL**, puedes ver cómo se hace en el archivo:
 
-`backend/config.php`
-
 *[config.php](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/backend/config.php)*
 
 **Utiliza las variables de entorno por motivos de seguridad.**
@@ -243,12 +241,11 @@ api/
 └── surveys/    
     ├── create.php            // Crea una nueva encuesta
     └── survey.php            // Obtiene una encuesta por ID
-
 ```
 
 ## Uso de metrics.php
 
-El archivo `metrics/metrics.php` es fundamental, ya que se encarga de traer todas las encuestas desde la base de datos para ser mostradas en el Frontend.
+El archivo *[metrics.php](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/backend/api/metrics/metrics.php)* es fundamental, ya que se encarga de traer todas las encuestas desde la base de datos para ser mostradas en el Frontend.
 
 Si estás usando **PHP**, puedes copiar el código directamente, ya que está preparado para funcionar con la estructura esperada por este paquete.
 
