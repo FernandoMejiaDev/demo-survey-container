@@ -87,7 +87,6 @@ Esta pantalla permite visualizar todas las encuestas disponibles en tu base de d
 
 Puedes encontrar el código fuente de esta página en:
 
-`frontend/src/components/ui/MetricsUi.jsx`
 *[MetricsUi](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/frontend/src/components/ui/MetricsUi.jsx)*
 
 
@@ -105,7 +104,7 @@ Esta es la sección que probablemente más te interesa: cómo usar el componente
 
 El código de esta página se encuentra en:
 
-`frontend/src/components/ui/SurveyUi.jsx`
+*[SurveyUi](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/frontend/src/components/ui/SurveyUi.jsx)*
 
 Aquí es donde se importa e integra el paquete **survey-container** en una aplicación real utilizando **React.**
 
