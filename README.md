@@ -215,6 +215,8 @@ Debes crear una base de datos **MySQL, SQLite, postgresQL** y conectar tu backen
 
 `backend/config.php`
 
+*[config.php](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/backend/config.php)*
+
 **Utiliza las variables de entorno por motivos de seguridad.**
 
 ## Archivos importantes del backend
@@ -238,9 +240,9 @@ api/
 ├── response/    
 │   ├── getResponse.php       // Obtiene las respuestas
 │   └── postResponse.php      // Guarda las respuestas
-├── surveys/    
-│   ├── create.php            // Crea una nueva encuesta
-│   └── survey.php            // Obtiene una encuesta por ID
+└── surveys/    
+    ├── create.php            // Crea una nueva encuesta
+    └── survey.php            // Obtiene una encuesta por ID
 
 ```
 
