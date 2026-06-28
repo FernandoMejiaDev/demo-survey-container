@@ -263,7 +263,7 @@ Aunque puedes copiar directamente los archivos **PHP** para facilitar la integra
 
 # Base de datos
 
-En este proyecto se utiliza **MySQL**, y dentro de la carpeta `database/` se incluye un archivo llamado *[schema.sql](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/database/schema.sql)*  que contiene todas las instrucciones necesarias para crear las tablas requeridas.
+En este proyecto se utiliza **MySQL**, y dentro de la carpeta `database/` se incluye un archivo llamado *[schema.sql](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/database/schema.sql)* que contiene todas las instrucciones necesarias para crear las tablas requeridas.
 
 
 Si planeas clonar o adaptar este proyecto, puedes usar directamente el archivo *[schema.sql](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/database/schema.sql)* o copiar el siguiente código **SQL** para crear las tablas:
@@ -298,7 +298,7 @@ Estas tablas representan:
 
 Ruta del archivo **SQL**:
 
-`database/schema.sql`
+*[schema.sql](https://github.com/FernandoMejiaDev/demo-survey-container/blob/main/database/schema.sql)*
 
 </details>
 
