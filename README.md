@@ -21,13 +21,13 @@ Esta demo fue construida utilizando el siguiente stack:
 
 <div align="left">
 
-![javascript](https://img.shields.io/static/v1?message=javascript&logo=javascript&label=&color=F7DF1E&logoColor=black&labelColor=&style=for-the-badge)
-![react](https://img.shields.io/static/v1?message=react&logo=react&label=&color=61DAFB&logoColor=black&labelColor=&style=for-the-badge)
-![tailwind](https://img.shields.io/static/v1?message=tailwindCSS&logo=tailwindcss&label=&color=06B6D4&logoColor=white&labelColor=&style=for-the-badge)
-![vite](https://img.shields.io/static/v1?message=vite&logo=vite&label=&color=646CFF&logoColor=white&labelColor=&style=for-the-badge)
-![php](https://img.shields.io/static/v1?message=php&logo=php&label=&color=777BB4&logoColor=white&labelColor=&style=for-the-badge)
-![mysql](https://img.shields.io/static/v1?message=mysql&logo=mysql&label=&color=4479A1&logoColor=white&labelColor=&style=for-the-badge)
-![npm](https://img.shields.io/static/v1?message=dependencia-survey-container&logo=npm&label=&color=CB3837&logoColor=white&labelColor=&style=for-the-badge)
+![javascript](https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![react](https://img.shields.io/badge/react-000000?style=for-the-badge&logo=react&logoColor=61DAFB)
+![tailwind](https://img.shields.io/badge/tailwind_css-000000?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4)
+![vite](https://img.shields.io/badge/vite-000000?style=for-the-badge&logo=vite&logoColor=646CFF)
+![php](https://img.shields.io/badge/php-000000?style=for-the-badge&logo=php&logoColor=777BB4)
+![mysql](https://img.shields.io/badge/mysql-000000?style=for-the-badge&logo=mysql&logoColor=4479A1)
+![npm](https://img.shields.io/badge/dependencia_survey_container-000000?style=for-the-badge&logo=npm&logoColor=CB3837)
 
 </div>
 
