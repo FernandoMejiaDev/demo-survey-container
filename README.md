@@ -305,9 +305,9 @@ Ruta del archivo **SQL**:
 
 <div align="left">
 
-[![NPM](https://img.shields.io/static/v1?message=Paquete-NPM&logo=NPM&label=&color=CD3E3D&logoColor=white&labelColor=&style=for-the-badge)](https://www.npmjs.com/package/survey-container)
-[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/survey-container)
-[![WORDPRESS](https://img.shields.io/static/v1?message=página-de-documentación&logo=WordPress&label=&color=1790c8&logoColor=white&labelColor=&style=for-the-badge)](https://surveycontainer.wordpress.com/)
+[![npm](https://img.shields.io/badge/Paquete_NPM-000000?style=for-the-badge&logo=npm&logoColor=CB3837)](https://www.npmjs.com/package/survey-container)
+[![GITHUB](https://img.shields.io/badge/Repositorio_de_desarrollo_de_survey_container-000000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/FernandoMejiaDev/survey-container)
+[![WORDPRESS](https://img.shields.io/badge/página_de_documentación-000000?style=for-the-badge&logo=WordPress&logoColor=1790c8)](https://surveycontainer.wordpress.com/)
 
 </div>
 
