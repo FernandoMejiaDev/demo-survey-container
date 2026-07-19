@@ -4,8 +4,9 @@
 
 Si estás buscando el repositorio del desarrollo del paquete, puedes encontrarlo aquí:
 
-[![GITHUB](https://img.shields.io/static/v1?message=Repositorio-de-desarrollo-de-survey-container&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/survey-container)
-[![GITHUB](https://img.shields.io/static/v1?message=Documentación&logo=Github&label=&color=22262A&logoColor=white&labelColor=&style=for-the-badge)](https://github.com/FernandoMejiaDev/Survey-Container-Documentation)
+[![GITHUB](https://img.shields.io/badge/repositorio_de_desarrollo_de_survey_container-000000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/FernandoMejiaDev/survey-container)
+
+[![GITHUB](https://img.shields.io/badge/Documentación-000000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/FernandoMejiaDev/Survey-Container-Documentation)
 
 # Demo - Survey Container
 Este repositorio es una **aplicación de demostración** que utiliza el paquete **NPM survey-container** como dependencia. Aquí encontrarás ejemplos claros y documentación sobre:
